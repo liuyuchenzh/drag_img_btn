@@ -1,0 +1,44 @@
+.yc-drag-img-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  border: 1px solid #555;
+  font-family: "Microsoft YaHei", Arial;
+}
+.yc-drag-img-btn,
+.yc-drag-add-img-btn,
+.yc-drag-img-btn-temp {
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 21.25%;
+  flex-shrink: 0;
+  height: 127.5px;
+  margin-right: 5%;
+  margin-bottom: 30px;
+}
+.yc-drag-img-btn:nth-child(4n+4),
+.yc-drag-add-img-btn:nth-child(4n+4),
+.yc-drag-img-btn-temp:nth-child(4n+4) {
+  margin-right: 0;
+}
+.yc-drag-img-btn:nth-last-child(-n+4),
+.yc-drag-add-img-btn:nth-last-child(-n+4),
+.yc-drag-img-btn-temp:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+.yc-drag-img-btn,
+.yc-drag-add-img-btn {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.yc-drag-img-btn a {
+  display: block;
+  text-decoration: none;
+}

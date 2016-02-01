@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <title>Image Button</title>
+  <script src="scripts/img_btn.js"></script>
+  <link rel="stylesheet" href="styles/img_btn.css">
+</head>
+<body>
+  <div class="yc-drag-img-btn-container">
+    <div class="yc-drag-add-img-btn">
+      <span>Add</span>
+    </div>
+  </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var addBtn = document.querySelector(".yc-drag-add-img-btn");
+    var container = document.querySelector(".yc-drag-img-btn-container");
+    addBtn.addEventListener("click", function() {
+      imgBtn.create(container);
+    }, false);
+  }, false);
+  </script>
+</body>
+</html>

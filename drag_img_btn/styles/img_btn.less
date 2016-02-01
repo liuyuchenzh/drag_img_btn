@@ -1,0 +1,49 @@
+@cols: 4;
+@basis: (100% - (@cols - 1) * @gap) / @cols;
+@containerWidth: 600px;
+@gap: 5%;
+@margin: @containerWidth * @gap / 100;
+
+.yc-drag-img-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: @containerWidth;
+  border: 1px solid #555;
+  font-family: "Microsoft YaHei", Arial;
+}
+
+.yc-drag-img-btn,
+.yc-drag-add-img-btn,
+.yc-drag-img-btn-temp {
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: @basis;
+  flex-shrink: 0;
+  height: @containerWidth * @basis / 100;
+  margin-right: @gap;
+  margin-bottom: @margin;
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n+4) {
+    margin-bottom: 0;
+  }
+}
+
+.yc-drag-img-btn,
+.yc-drag-add-img-btn {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.1));
+}
+
+.yc-drag-img-btn a {
+  display: block;
+  text-decoration: none;
+}
